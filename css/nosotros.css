@@ -1,0 +1,51 @@
+.contenedor_nosotros {
+    max-width: 120rem;
+    margin: 0 auto;
+    
+}
+
+.contenedor_nosotros h1 {
+    text-align: center;
+}
+.nosotros {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+.nosotros__contenido {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    padding: 20px 50px;
+  
+}
+
+@media (min-width: 768px) {
+    .nosotros {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    
+}
+
+.nosotros__imagen {
+    grid-row: 1/2;
+    width: 100%;
+
+    
+}
+
+@media (min-width: 768px) {
+    .nosotros__imagen {
+        grid-column: 2/3;
+        
+    }
+    
+}
+
+.bloque__imagen {
+    height: 50px;
+    width: 50px;
+}
+
+
+
